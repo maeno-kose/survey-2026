@@ -6,15 +6,18 @@
 
 | サブディレクトリ | URL | 内容 |
 |----------------|-----|------|
-| `pocket-shisha/` | https://ideal-trd.github.io/survey-2026/pocket-shisha/ | ポケットシーシャに関するアンケート |
+| `pocket-shisha/` | https://ideal-trd.github.io/survey-2026/pocket-shisha/ | ポケットシーシャに関する一般消費者向けアンケート |
+| `pocket-shisha-staff/` | https://ideal-trd.github.io/survey-2026/pocket-shisha-staff/ | ポケットシーシャに関する店長・スタッフ向けアンケート |
 
 ## 構成
 
 ```
 survey-2026/
 ├── README.md
-└── pocket-shisha/
-    └── index.html  ← Google Apps Script (GAS) 連携の静的アンケートフォーム
+├── pocket-shisha/
+│   └── index.html        ← 消費者向け（GAS送信先: スプシ「シート1」）
+└── pocket-shisha-staff/
+    └── index.html        ← 店長向け（GAS送信先: スプシ「店長回答」シート、respondent_type=staff）
 ```
 
 ## 仕組み
